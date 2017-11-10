@@ -26,6 +26,7 @@
 
     </context>
   </input>
+  
   <input pattern="(Buenos|buenos) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
@@ -39,6 +40,7 @@
 
     </context>
   </input>
+
   <input pattern="(Solicito|solicito) *">
 
     <context>
