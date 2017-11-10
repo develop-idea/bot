@@ -30,7 +30,7 @@
   </input>
 </context>
 
-<context>
+<!-- <context>
   <input pattern="(Buenas|Buenas) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
@@ -44,4 +44,4 @@
 
     </context>
   </input>
-</context>
+</context> -->
