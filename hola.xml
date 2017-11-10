@@ -11,12 +11,35 @@
       </input>
 
     </context>
-    <context if="empty($Ayuda)">
-      <output value="En que puedo ayudarte?"/>
+  </input>
+</context>
+
+<context>
+  <input pattern="(Buenos|Buenos) *">
+    <output value="Hola $UserName!" if="full($UserName)"/>
+
+    <context if="empty($UserName)">
+      <output value="Hola! ¿Cual es tu nombre?"/>
 
       <input pattern="$Text">
-        <var name="Ayuda" value="$Text" scope="user"/>
-        <output value="Entra a http://losdeidea.com.mx"/>
+        <var name="UserName" value="$Text" scope="user"/>
+        <output value="Mucho gusto $UserName!"/>
+      </input>
+
+    </context>
+  </input>
+</context>
+
+<context>
+  <input pattern="(Buenas|Buenas) *">
+    <output value="Hola $UserName!" if="full($UserName)"/>
+
+    <context if="empty($UserName)">
+      <output value="Hola! ¿Cual es tu nombre?"/>
+
+      <input pattern="$Text">
+        <var name="UserName" value="$Text" scope="user"/>
+        <output value="Mucho gusto $UserName!"/>
       </input>
 
     </context>
