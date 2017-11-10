@@ -49,4 +49,16 @@
       <output value="Estamos para servirte"/>
     </context>
   </input>
+  <input pattern="(Cual es su horario?|cual es su horario?) *">
+
+    <context>
+      <output value="8:00-18:30"/>
+    </context>
+  </input>
+  <input pattern="(Que horario|que horario) *">
+
+    <context>
+      <output value="8:00-18:30"/>
+    </context>
+  </input>
 </context>
