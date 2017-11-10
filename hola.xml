@@ -1,16 +1,16 @@
 <context>
   <input pattern="(Hola|hola|Empezar) *">
-    <!-- <output value="Hola $UserName!" if="full($UserName)"/>
+    <output value="Hola $Name!" if="full($Name)"/>
 
-    <context if="empty($UserName)">
+    <context if="empty($Name)">
       <output value="Hola! ¿Cual es tu nombre?"/>
 
       <input pattern="$Text">
-        <var name="UserName" value="$Text" scope="user"/>
-        <output value="Mucho gusto $UserName!"/>
+        <var name="Name" value="$Text" scope="user"/>
+        <output value="Mucho gusto $Name!"/>
       </input>
 
-    </context> -->
+    </context>
   </input>
 
   <input pattern="(Buenas|Buenas) *">
