@@ -20,9 +20,15 @@
 
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
-        <output value="Mucho gusto $UserName!"/>
+        <output value="Mucho gusto $UserName! En que podemos ayudarte?"/>
       </input>
 
+    </context>
+  </input>
+  <input pattern="(Informes|informes) *">
+
+    <context>
+      <output value="Visita http://losdeidea.com.mx/contacto"/>
     </context>
   </input>
 </context>
