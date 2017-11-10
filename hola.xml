@@ -25,10 +25,28 @@
 
     </context>
   </input>
-  <input pattern="(Informes|informes) *">
+  <input pattern="(Solicito|solicito) *">
 
     <context>
       <output value="Visita http://losdeidea.com.mx/contacto"/>
+    </context>
+  </input>
+  <input pattern="(Como|como) *">
+
+    <context>
+      <output value="Visita http://losdeidea.com.mx/contacto"/>
+    </context>
+  </input>
+  <input pattern="(Donde|donde) *">
+
+    <context>
+      <output value="Visita http://losdeidea.com.mx/contacto"/>
+    </context>
+  </input>
+  <input pattern="(Gracias|gracias) *">
+
+    <context>
+      <output value="Estamos para servirte"/>
     </context>
   </input>
 </context>
