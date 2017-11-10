@@ -1,5 +1,5 @@
 <context>
-  <input pattern="(Hola|hola) *">
+  <input pattern="(Hola|hola) *" pattern="(Empezar) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
     <context if="empty($UserName)">
@@ -12,6 +12,7 @@
 
     </context>
   </input>
+
   <input pattern="(Buenas|Buenas) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
