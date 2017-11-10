@@ -13,6 +13,24 @@
     </context>
   </input>
 
+	<output value="Cual es tu color favorito?"/>
+
+  <context>
+    <sample>
+      <item>Azul</item>
+      <item>Verde</item>
+      <item>Morado</item>
+      <item>Purpura</item>
+      <item>Negro</item>
+      <item>Amarillo</item>
+      <item>Rosa</item>
+      <item>Rojo</item>
+    </sample>
+    <input pattern="* $Color *">
+      <output value="A mi tambien me gusta!!"/>
+    </input>
+  </context>
+
   <input pattern="(Buenas|Buenas) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
