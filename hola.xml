@@ -11,5 +11,14 @@
       </input>
 
     </context>
+    <context if="empty($Ayuda)">
+      <output value="En que puedo ayudarte?"/>
+
+      <input pattern="$Text">
+        <var name="Ayuda" value="$Text" scope="user"/>
+        <output value="Entra a http://losdeidea.com.mx"/>
+      </input>
+
+    </context>
   </input>
 </context>
